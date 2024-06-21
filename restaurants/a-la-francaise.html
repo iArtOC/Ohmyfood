@@ -19,24 +19,32 @@
     
     <body>
         <div class="main-container">
-            <header>
-                <div>
+            <header class="en-tete">
+                <div class="GoBack">
                     <a href="../index.html">
                         <i class="fa-solid fa-arrow-left"></i>
                     </a>
-                    <img src="../assets/images/logo/ohmyfood@2x.svg" alt="Logo du site ohmyfood.com">
                 </div>
-                <img src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image">
+                <div class="title">
+                    <h1>ohmyfood</h1>
+                </div>
             </header>
             <main>
-                <section>
-                    <div>
-                        <h1>À la française</h1>
-                        <i class="fa-regular fa-heart"></i>
+                <div>
+                    <img src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image">
+                </div>
+                <section class="restaurant-container">    
+                    <div class="resto-title">
+                        <div>
+                            <h2>À la française</h2>
+                        </div>
+                        <div class="card-pin">
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
                     </div>
                     <section class="menu">
                         <div class="menu-title">
-                            <h2 class="section-title">Entrées</h2>
+                            <h2 class="section-title">ENTRÉES</h2>
                         </div>
                         <div class="menu-cards">
                             <a href="#">
@@ -85,7 +93,7 @@
                     </section>
                     <section class="menu">
                         <div class="menu-title">
-                            <h2 class="section-title">Plats</h2>
+                            <h2 class="section-title">PLATS</h2>
                         </div>
                         <div class="menu-cards">
                             <a href="#">
@@ -134,7 +142,7 @@
                     </section>
                     <section class="menu">
                         <div class="menu-title">
-                            <h2 class="section-title">Desserts</h2>
+                            <h2 class="section-title">DESSERTS</h2>
                         </div>
                         <div class="menu-cards">
                             <a href="#">
@@ -181,27 +189,37 @@
                             </a>
                         </div>
                     </section>
+                    <div class="btnAlign">
+                        <a class="btnRound" href="#">Commander</a> 
+                    </div>
                     <button>Commander</button>
                 </section>
             </main>
+
             <footer>
-                <div>
-                    <img src="../assets/images/logo/ohmyfood.png" alt="Logo du site ohmyfood.com">
+                <div class="foot-container">
+                    <div class="elm-lg-ft">
+                        <h1 class="lg-ft">ohmyfood</h1>
+                    </div>
+                    <nav class="desktop-ft">
+                        <div class="foot1">
+                            <a href="#">
+                                <i class="fa-solid fa-utensils"></i>
+                                Proposer un restaurant
+                            </a>
+                            <a href="#">
+                                <i class="fa-solid fa-handshake-angle"></i>
+                                Devenir partenaire
+                            </a>
+                        </div>
+                        <div class="foot2">
+                            <a href="#">Mentions légales</a>
+                            <a href="mailto:">Contact</a>
+                        </div>
+                    </nav>
                 </div>
-                <nav>
-                    <a href="#">
-                        <i class="fa-solid fa-utensils"></i>
-                        Proposer un restaurant
-                    </a>
-                    <a href="#">
-                        <i class="fa-solid fa-handshake-angle"></i>
-                        Devenir partenaire
-                    </a>
-                    <a href="#">Mentions légales</a>
-                    <a href="mailto:">Contact</a>
-                </nav>
             </footer>
         </div>
     </body>
-    
-    </html>
+
+</html>

@@ -1,7 +1,6 @@
 /********* General ***********/
 * {
     font-family: 'Roboto', sans-serif;
-    /*font-family: 'Shrikhand', sans-serif;*/
 }
 
 :root {
@@ -74,15 +73,28 @@ a {
     /*filter: drop-shadow(0px 10px 0px rgb(186, 186, 186));*/
 }
 
+.en-tete .title {
+    height: 100px;
+    box-shadow: 0px 10px 10px 0px #bababacc;
+    z-index: 2;
+}
+
 .title h1 {
     display: flex;
     justify-content: center;
+}
+
+.en-tete .location {
+    height: 50px;
+    box-shadow: 0px 10px 10px 0px #bababacc;
+    z-index: 1;
 }
 
 .location {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #eaeaea;
     padding: 10px 0;
 }
@@ -108,9 +120,9 @@ a {
     color: black;
 }
 
-/********** Premiere partie ***************/
+/********** hero ***************/
 .element1 {
-    background-color: #f3f3f3;
+    background-color: #f6f6f6;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,11 +136,12 @@ a {
 
 .btnAlign {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .btnRound {
-    width: 100%;
     height: 60px;
     display: flex;
     align-items: center;
@@ -170,6 +183,44 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.fonctionnement .btn-menu {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    color: black;
+    border-color: transparent;
+    font-size: large;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.3));
+}
+
+.fonctionnement .btn-menu::before {
+    content: "1";
+    color: white;
+    width: 24px;
+    height: 24px;
+    margin-left: -41px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100% ;
+    background-color: #9356dc;
+
+}
+
+.btn-menu .card-pin {
+    margin: 20px;
+}
+
+.btn-menu .card-pin i:hover {
+	color: #9356dc;
 }
 
 /********** Restaurant ***********/
@@ -314,6 +365,7 @@ footer .foot2 {
 
     .restaurant {
         width: 100%;
+        padding: 30px 50px 30px 50px;
     }
     
     .restaurant-title {
@@ -350,6 +402,7 @@ footer .foot2 {
     footer {
         display: flex;
         flex-direction: row-reverse;
+        height: 114px;
     }
     
     .foot-container {

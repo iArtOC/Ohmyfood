@@ -1,4 +1,4 @@
-/****** General ***********/
+/********* General ***********/
 * {
     font-family: 'Roboto', sans-serif;
 }
@@ -10,16 +10,7 @@
 }
 
 .fa-solid {
-    color: var(--main-color);
-}
-img {
-    width: 50%;
-    object-fit: cover;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
+    color: black;
 }
 
 body {
@@ -31,40 +22,271 @@ body {
 
 .main-container {
     width: 100%;
-    min-width: 320px;
-    max-width: 768px;
-    padding: 0 50px;
+    min-width: 375px;
+    max-width: 1440px;
+    padding: 0;
+    margin: 0 10px;
     box-sizing: border-box;
 }
 
-section .card {
-    display: flex;
-    flex-direction: row;
+h1 {
+    font-family: 'shrikhand', sans-serif;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.section-paragraph {
+    margin: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.backColor {
+    background-color: #f6f6f6;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card-title {
+    font-size: 20px;
+    margin: 10px 0 5px 0;
+}
+
+.card-subtitle {
+    font-size: 18px;
+    margin: 5px 0 10px 0;
+}
+
+.card-price {
+    font-size: 20px;
+    margin-right: -70px;
+    display: flex;
+}
+
+.card-check {
+    visibility: hidden;
+}
+
+/********** EN-TETE **********/
+.en-tete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.GoBack {
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/********** Menu Resto *********/
+
+.restaurant-container {
+    background-color: #eaeaea;
+    padding: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-sizing: border-box;
+    margin-top: -30px;
+    z-index: 2;
+}
+
+.resto-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-pin {
+    display: flex;
+    align-items: center;
+}
+
+.btnAlign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.btnRound {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 50px;
+    color: white;
+	background: linear-gradient(var(--second-color), var(--prim-color));
+    border-radius: 39px;
+    border-color: transparent;
+    font-size: large;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.1));
+}
+
+.menu-title {
+    display: block;
+    border-bottom: 3px solid transparent;
+    border-color: #99e2d0;
+    width: 55px;
+}
+
+.menu {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.menu a {
+    width: 100%;
+}
+
+.menu-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-cards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.menu-cards .card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.menu-cards .card-txt {
+    margin: 20px;
+}
+
+/************ PIED DE PAGE *****************/
 footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    color: white;
+}
+
+footer a {
+    margin: 5px 0;
+}
+
+footer .fa-solid {
+    color: white;
+}
+
+.foot-container {
+    margin: 20px;
+}
+
+.lg-ft {
+    font-size: 22px;
+}
+
+footer .foot1 {
     display: flex;
     flex-direction: column;
 }
 
-/***** Header **********/
+footer .foot2 {
+    display: flex;
+    flex-direction: column;
+}
 
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-    .main-container {
-        padding: 0;
-    }
-
-}
-
-/* Large devices (desktop, more than 1024px) */
+/* Medium devices (desktop, more than 1024px) */
 @media (min-width: 1025px) {
-    .main-container {
-        padding: 0;
+    img {
+        width: 100%;
+        height: 383px;
+        object-fit: cover;
     }
+
+    .restaurant-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0 100px 30px 100px;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .foot-container {
+        margin: 20px 20px 0 0;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .elm-lg-ft {
+        display: flex;
+        align-items: end;
+        margin: 10px;
+    }
+
+    .foot-container a {
+        margin: 0 10px;
+    }
+    
+    .foot-container .desktop-ft {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    footer .foot1 {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    footer .foot2 {
+        display: flex;
+        flex-direction: row;
+    }
+
 }
