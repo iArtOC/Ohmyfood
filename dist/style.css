@@ -58,4 +58,10 @@ logo_titre {
   background-color: #9356dc;
 }
 
+.FlexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*# sourceMappingURL=style.css.map */

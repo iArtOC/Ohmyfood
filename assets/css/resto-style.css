@@ -111,7 +111,7 @@ img {
 /********** Menu Resto *********/
 
 .restaurant-container {
-    background-color: #eaeaea;
+    background-color: #f6f6f6;
     padding: 30px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
@@ -240,13 +240,26 @@ footer .foot2 {
 /****** Media queries ***********/
 /* Medium devices (desktop, more than 1024px) */
 @media (min-width: 1025px) {
+    .img-back {
+        width: 100%;
+        height: 383px;
+        object-fit: cover;
+    }
+
     img {
         width: 100%;
         height: 383px;
         object-fit: cover;
     }
 
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .restaurant-container {
+        width: 50%;
         display: flex;
         flex-direction: column;
         padding: 0 100px 30px 100px;
