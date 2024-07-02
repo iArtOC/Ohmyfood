@@ -1,0 +1,58 @@
+/********** EN-TETE **********/
+.en-tete {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.en-tete .title {
+    height: 100px;
+    box-shadow: 0px 10px 10px 0px #bababacc;
+    z-index: 2;
+    @media (min-width: 1025px) {
+        box-shadow: none;
+    }
+}
+
+.title h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.en-tete .location {
+    height: 50px;
+    box-shadow: 0px 10px 10px 0px #bababacc;
+    z-index: 1;
+    @media (min-width: 1025px) {
+        box-shadow: none;
+    }
+}
+
+.location {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+    padding: 10px 0;
+}
+
+.location-element {
+    display: flex;
+    justify-content: center;
+}
+
+.location-icon {
+    margin: 10px;
+}
+
+.location-exemple {
+    background-color: #eaeaea;
+    border: none;
+    font-weight: bold;
+}
+
+.location-exemple::placeholder {
+    font-size: 18px;
+    color: black;
+}

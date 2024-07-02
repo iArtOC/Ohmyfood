@@ -2,8 +2,11 @@
 
 
 @import "./base/typography";
+@import "./base/base";
 @import "./base/animations";
 
+@import "./pages/home";
+@import "./pages/resto";
 
 @import "./partials/footer";
 @import "./partials/header";

@@ -14,29 +14,37 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
             integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
             crossorigin="anonymous" referrerpolicy="no-referrer">
-        <link rel="stylesheet" href="../assets/css/resto-style.css">
+            <link rel="stylesheet" href="../dist/style.css">
     </head>
     
     <body>
         <div class="main-container">
             <header class="en-tete">
-                <a href="../index.html">
-                    <i class="fa-solid fa-arrow-left"></i>
-                </a>
+                <div class="GoBack">
+                    <a href="../index.html">
+                        <i class="fa-solid fa-arrow-left fa-2xl"></i>
+                    </a>
+                </div>
                 <div class="title">
                     <h1>ohmyfood</h1>
                 </div>
-                <img src="../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Image">
             </header>
             <main>
-                <section>
-                    <div>
-                        <h2>Le délice des sens</h2>
-                        <i class="fa-regular fa-heart fa-xl"></i>
+                <div class="img-head">
+                    <img src="../assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Image">
+                </div>
+                <section class="menu-container">
+                    <div class="resto-title">
+                        <div>
+                             <h2>Le délice des sens</h2>
+                        </div>
+                        <div class="card-pin">
+                            <i class="fa-regular fa-heart fa-xl"></i>
+                        </div>
                     </div>
                     <section class="menu">
                         <div class="menu-title">
-                            <h2 class="section-title">Entrées</h2>
+                            <h2 class="section-title">ENTRÉES</h2>
                         </div>
                         <div class="menu-cards">
                             <a href="#">
@@ -85,7 +93,7 @@
                     </section>
                     <section class="menu">
                         <div class="menu-title">
-                            <h2 class="section-title">Plats</h2>
+                            <h2 class="section-title">PLATS</h2>
                         </div>
                         <div class="menu-cards">
                             <a href="#">
@@ -134,7 +142,7 @@
                     </section>
                     <section class="menu">
                         <div class="menu-title">
-                            <h2 class="section-title">Desserts</h2>
+                            <h2 class="section-title">DESSERTS</h2>
                         </div>
                         <div class="menu-cards">
                             <a href="#">
@@ -184,7 +192,6 @@
                     <div class="btnAlign">
                         <a class="btnRound" href="#">Commander</a> 
                     </div>
-                    <button>Commander</button>
                 </section>
             </main>
             <footer>
