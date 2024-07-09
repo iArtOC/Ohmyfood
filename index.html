@@ -14,12 +14,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="dist/style.css">
+        <link rel="stylesheet" href="dist/style.css">
 </head>
 
 <body>
+    <div class="loader-container">
+        <span class="loader">Ohmyfood</span>
+    </div>    
     <div class="main-container">
-        <header class="en-tete">
+        <header class="en-tete-accueil">
             <div class="title">
                 <h1>ohmyfood</h1>
             </div>
@@ -38,7 +41,7 @@
                     <h2 class="section-title">Réservez le menu qui vous convient</h2>
                     <p class="section-paragraph">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                     <div class="btn-container">
-                        <a class="btnRound" href="#restaurants">Explorer nos restaurants</a> 
+                        <a class="btn-round" href="#restaurants">Explorer nos restaurants</a> 
                     </div>
                 </div>
             </section>
@@ -49,15 +52,15 @@
                     </div>
                     <div class="btn-container">
                         <button class="btn-menu">
-                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <span class="number">1</span><i class="fa-solid fa-mobile-screen-button"></i>
                             Choisissez un restaurants
                         </button>
                         <button class="btn-menu">
-                            <i class="fa-solid fa-list-ul"></i>
+                            <span class="number">2</span><i class="fa-solid fa-list-ul"></i>
                             Composez votre menu
                         </button>
                         <button class="btn-menu">
-                            <i class="fa-solid fa-store"></i>                            
+                            <span class="number">3</span><i class="fa-solid fa-store"></i>                            
                             Dégustez au restaurants
                         </button>
                     </div>
@@ -80,6 +83,7 @@
                                     </div>
                                     <div class="card-pin">
                                         <i class="fa-regular fa-heart fa-xl"></i>
+                                        <i class="fa-solid fa-heart fa-xl"></i>
                                     </div>
                                 </div>
                             </article>
@@ -93,8 +97,10 @@
                                         <h3 class="card-title">La note enchantée</h3>
                                         <p>Charonne</p>
                                     </div>
-                                    <div class="card-pin">
-                                        <i class="fa-regular fa-heart fa-xl"></i>
+                                        <div class="card-pin">
+                                            <i class="fa-regular fa-heart fa-xl"></i>
+                                            <i class="fa-solid fa-heart fa-xl"></i>
+					                    </div>
                                     </div>
                                 </div>
                             </article>
@@ -109,6 +115,7 @@
                                     </div>
                                     <div class="card-pin">
                                         <i class="fa-regular fa-heart fa-xl"></i>
+                                        <i class="fa-solid fa-heart fa-xl"></i>
                                     </div>
                                 </div>
                             </article>
@@ -123,6 +130,7 @@
                                     </div>
                                     <div class="card-pin">
                                         <i class="fa-regular fa-heart fa-xl"></i>
+                                        <i class="fa-solid fa-heart fa-xl"></i>
                                     </div>
                                 </div>
                             </article>

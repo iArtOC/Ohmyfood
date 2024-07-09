@@ -1,0 +1,56 @@
+/****** menu resto card *******/
+.menu-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-cards .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0;
+    clip: rect(945px 70px);
+}   
+
+.menu-cards .card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background-clip: content-box;
+    -webkit-background-clip: content-box;
+    opacity: 1;
+}
+
+.menu-cards .card-txt {
+    margin: 20px;
+}
+
+.card-check {
+    background-color: #99e2d0;
+    width: 59px;
+    height: 70px;
+    margin: 0;
+    box-sizing: border-box;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    transform: translateX(59px);
+    transition: all .3s ease-in-out;
+    opacity: 0;
+    transition-delay: opacity 1.5s ease-in-out;
+}
+
+.card:hover .card-check{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.card-check i{
+    color: #fff;
+}

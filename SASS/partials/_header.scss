@@ -1,15 +1,38 @@
-/********** EN-TETE **********/
+/********** EN-TETE Resto **********/
 .en-tete {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.GoBack {
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/********** EN-TETE-accueil **********/
+.en-tete-accueil {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.en-tete .title {
+.en-tete-accueil .title {
     height: 100px;
-    box-shadow: 0px 10px 10px 0px #bababacc;
+    box-shadow: 0px 10px 10px 0px rgba(186, 186, 186, 0.8);
     z-index: 2;
-    @media (min-width: 1025px) {
+}
+@media (min-width: 1025px) {
+    .en-tete-accueil .title {
         box-shadow: none;
     }
 }
@@ -19,11 +42,13 @@
     justify-content: center;
 }
 
-.en-tete .location {
+.en-tete-accueil .location {
     height: 50px;
-    box-shadow: 0px 10px 10px 0px #bababacc;
+    box-shadow: 0px 10px 10px 0px rgba(186, 186, 186, 0.8);
     z-index: 1;
-    @media (min-width: 1025px) {
+}
+@media (min-width: 1025px) {
+    .en-tete-accueil .location {
         box-shadow: none;
     }
 }

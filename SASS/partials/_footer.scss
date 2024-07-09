@@ -2,9 +2,11 @@
 footer {
     display: flex;
     flex-direction: column;
-    background-color: #353535;
-    color: white;
-    @media (min-width: 1025px) {
+    background-color: $foot-color;
+    color: $txt-color-footer;
+}
+@media (min-width: 1025px) {
+    footer {
         display: flex;
         flex-direction: row-reverse;
         height: 114px;
@@ -16,15 +18,20 @@ footer a {
 }
 
 footer .fa-solid {
-    color: white;
+    color: $txt-color-footer;
 }
 
 .foot-container {
     margin: 20px;
-    @media (min-width: 1025px) {
-        margin: 20px;
+}
+@media (min-width: 1025px) {
+    .foot-container {
         display: flex;
+        align-items: flex-end;
         flex-direction: row-reverse;
+    }
+    h1 {
+        margin: 0;
     }
 }
 
@@ -35,7 +42,9 @@ footer .fa-solid {
 footer .foot1, .foot2 {
     display: flex;
     flex-direction: column;
-    @media (min-width: 1025px) {
+}
+@media (min-width: 1025px) {
+    footer .foot1, .foot2 {
         display: flex;
         flex-direction: row;
     }
@@ -47,11 +56,9 @@ footer .foot1, .foot2 {
         align-items: end;
         margin: 10px;
     }
-
     .foot-container a {
         margin: 0 10px;
     }
-    
     .foot-container .desktop-ft {
         display: flex;
         flex-direction: row;
