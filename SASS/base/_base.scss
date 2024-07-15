@@ -145,7 +145,10 @@ a {
 }
   
 .menu-cards .card-txt {
-    margin: 20px;
+    margin: 20px 0 20px 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
   
 .menu-cards .card-txt h3 {

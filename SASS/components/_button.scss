@@ -2,6 +2,7 @@
     @include box-flex-column;
     margin-top: 30px;
 }
+
 .btn-round {
     height: 60px;
     display: flex;
@@ -16,6 +17,7 @@
     box-sizing: border-box;
     filter: $btn-filter;
 }
+
 .btn-round:hover {
     transition: 1s;
     opacity: 0.9;
@@ -43,6 +45,7 @@
     box-sizing: border-box;
     filter: $btn-filter;
 }
+
 .btn-container .btn-menu .number {
     color: $txt-color-footer;
     width: 24px;
@@ -55,6 +58,7 @@
     border-radius: 100%;
     background-color: $prim-color;
 }
+
 .btn-container .btn-menu i {
     margin: 20px;
 }

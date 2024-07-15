@@ -4,6 +4,7 @@
     border-radius: 20px;
     padding: 5px;
     filter: $btn-filter;
+    overflow: hidden;
 }
   
 .card img {
@@ -13,76 +14,41 @@
 .card-title {
     font-size: 16px;
 }
-  
-.card-pin {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.card-pin i {
-    position: absolute;
-}
-
-.card-pin .fa-regular {
-    color: $loc-icon-color;
-}
-
-.card-pin .fa-solid {
-    opacity: 0;
-    transition-property: all;
-    transition-duration: 2s;
-    animation-fill-mode: forwards;
-}
-.card-pin .fa-solid:hover {
+.card:hover .card-animation-check {
+    width: 120px;
     opacity: 1;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: $prim-color;
+    cursor: pointer;
+}
+
+.card-animation-check {
+    display: flex;
+    align-items: flex-end;
+    width: 60px;
+    transition: 0.3s;
 }
   
 .card-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $therd-color;
-    width: 59px;
-    height: 70px;
-    margin: 0;
-    box-sizing: border-box;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    object-fit: cover;
-    transform: translateX(59px);
-    transition: all 0.3s ease-in-out;
-    opacity: 0;
-    transition-delay: opacity 1.5s ease-in-out;
+    margin-right: -5px;
+    width: 100%;
+    height: 80px;
+    transition: 0.3s;
 }
-  
-.card:hover .card-check {
-    transform: translateX(0px);
-    opacity: 1;
-}
-  
+
 .card-check i {
     color: $txt-color-footer;
-}
-
-.card-check {
-    background-color: $therd-color;
-}
-
-.card-price-check {
-    margin-left: -60px;
-    width: 120px;
-    height: 70px;
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-price p {
-    margin: 5px 0 16px;
+    margin: 20px;
     font-weight: bold;
 }
