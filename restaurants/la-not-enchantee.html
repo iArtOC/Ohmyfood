@@ -15,12 +15,12 @@
             integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
             crossorigin="anonymous" referrerpolicy="no-referrer">
             <link rel="stylesheet" href="../dist/style.css">
-        </head>
-    
+    </head>
+
     <body>
         <div class="main-container">
             <header class="en-tete">
-                <div class="GoBack">
+                <div class="go-back">
                     <a href="../index.html">
                         <i class="fa-solid fa-arrow-left fa-2xl"></i>
                     </a>
@@ -29,7 +29,7 @@
                     <h1>ohmyfood</h1>
                 </div>
             </header>
-            <main>
+            <main class="main-desktop-center">
                 <div class="img-head">
                     <img src="../assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Image">
                 </div>
@@ -38,11 +38,14 @@
                         <div>
                             <h2>La note enchantée</h2>
                         </div>
-                        <div class="card-pin">
-                            <i class="fa-regular fa-heart fa-xl"></i>
-                            <i class="fa-solid fa-heart fa-xl"></i>
+                        <div class="animation-heart">
+                            <div class="animation-heart-normal">
+                              <i class="fa-regular fa-heart fa-lg"></i>
+                            </div>
+                            <div class="animation-heart-hover">
+                              <i class="fa-solid fa-heart fa-lg"></i>
+                            </div>
                         </div>
-                    </div>
                     </div>
                     <section class="menu">
                         <div class="menu-title">
@@ -54,15 +57,18 @@
                                     <div class="card-content">
                                         <div class="card-txt">
                                             <h3 class="card-title">Ravioles de foie gras</h3>
-                                            <p class="card-subtitle">Accompagnées de leur crème à la truffe<span class="card-price">25€</span></p>
+                                            <p class="card-subtitle">Accompagnées de leur crème à la truffe</p>
                                         </div>
-                                    </div>
-                                    <div class="card-check">
-                                        <i class="fa-solid fa-circle-check fa-lg" aria-hidden="true"></i> 
+                                        <div class="card-price">
+                                            <p>25€</p>
+                                        </div>
+                                        <div class="card-check">
+                                            <i class="fa-solid fa-circle-check fa-lg" aria-hidden="true"></i> 
+                                        </div>
                                     </div>
                                 </article>
                             </div>
-                            <a href="#">
+                            <div>
                                 <article class="card">
                                     <div class="card-content">
                                         <div class="card-txt">
@@ -73,12 +79,12 @@
                                             <p>35€</p>
                                         </div>
                                         <div class="card-check">
-                                            <i class="fa-regular fa-circle-check" aria-hidden="true"></i> 
+                                            <i class="fa-solid fa-circle-check fa-lg" aria-hidden="true"></i> 
                                         </div>
                                     </div>
                                 </article>
-                            </a>
-                            <a href="#">
+                            </div>
+                            <div>
                                 <article class="card">
                                     <div class="card-content">
                                         <div class="card-txt">
@@ -89,12 +95,12 @@
                                             <p>20€</p>
                                         </div>
                                         <div class="card-check">
-                                            <i class="fa-regular fa-circle-check" aria-hidden="true"></i> 
+                                            <i class="fa-solid fa-circle-check fa-lg" aria-hidden="true"></i> 
                                         </div>
                                     </div>
                                 </article>
-                            </a>
-                            <a href="#">
+                            </div>
+                            <div>
                                 <article class="card">
                                     <div class="card-content">
                                         <div class="card-txt">
@@ -105,11 +111,11 @@
                                             <p>35€</p>
                                         </div>
                                         <div class="card-check">
-                                            <i class="fa-regular fa-circle-check" aria-hidden="true"></i> 
+                                            <i class="fa-solid fa-circle-check fa-lg" aria-hidden="true"></i> 
                                         </div>
                                     </div>
                                 </article>
-                            </a>
+                            </div>
                         </div>
                     </section>
                     <section class="menu">
@@ -117,7 +123,7 @@
                             <h2 class="section-title">PLATS</h2>
                         </div>
                         <div class="menu-cards">
-                            <a href="#">
+                            <div>
                                 <article class="card">
                                     <div class="card-content">
                                         <div class="card-txt">
@@ -128,12 +134,12 @@
                                             <p>40€</p>
                                         </div>
                                         <div class="card-check">
-                                            <i class="fa-regular fa-circle-check" aria-hidden="true"></i> 
+                                            <i class="fa-solid fa-circle-check fa-lg" aria-hidden="true"></i> 
                                         </div>
                                     </div>
                                 </article>
-                            </a>
-                            <a href="#">
+                            </div>
+                            <div>
                                 <article class="card">
                                     <div class="card-content">
                                         <div class="card-txt">
@@ -144,12 +150,12 @@
                                             <p>35€</p>
                                         </div>
                                         <div class="card-check">
-                                            <i class="fa-regular fa-circle-check" aria-hidden="true"></i> 
+                                            <i class="fa-solid fa-circle-check fa-lg" aria-hidden="true"></i> 
                                         </div>
                                     </div>
                                 </article>
-                            </a>
-                            <a href="#">
+                            </div>
+                            <div>
                                 <article class="card">
                                     <div class="card-content">
                                         <div class="card-txt">
@@ -160,11 +166,11 @@
                                             <p>44€</p>
                                         </div>
                                         <div class="card-check">
-                                            <i class="fa-regular fa-circle-check" aria-hidden="true"></i> 
+                                            <i class="fa-solid fa-circle-check fa-lg" aria-hidden="true"></i> 
                                         </div>
                                     </div>
                                 </article>
-                            </a>
+                            </div>
                         </div>
                     </section>
                     <section class="menu">
@@ -172,7 +178,7 @@
                             <h2 class="section-title">DESSERTS</h2>
                         </div>
                         <div class="menu-cards">
-                            <a href="#">
+                            <div>
                                 <article class="card">
                                     <div class="card-content">
                                         <div class="card-txt">
@@ -183,12 +189,12 @@
                                             <p>18€</p>
                                         </div>
                                         <div class="card-check">
-                                            <i class="fa-regular fa-circle-check" aria-hidden="true"></i> 
+                                            <i class="fa-solid fa-circle-check fa-lg" aria-hidden="true"></i> 
                                         </div>
                                     </div>
                                 </article>
-                            </a>
-                            <a href="#">
+                            </div>
+                            <div>
                                 <article class="card">
                                     <div class="card-content">
                                         <div class="card-txt">
@@ -199,12 +205,12 @@
                                             <p>22€</p>
                                         </div>
                                         <div class="card-check">
-                                            <i class="fa-regular fa-circle-check" aria-hidden="true"></i> 
+                                            <i class="fa-solid fa-circle-check fa-lg" aria-hidden="true"></i> 
                                         </div>
                                     </div>
                                 </article>
-                            </a>
-                            <a href="#">
+                            </div>
+                            <div>
                                 <article class="card">
                                     <div class="card-content">
                                         <div class="card-txt">
@@ -215,11 +221,11 @@
                                             <p>23€</p>
                                         </div>
                                         <div class="card-check">
-                                            <i class="fa-regular fa-circle-check" aria-hidden="true"></i> 
+                                            <i class="fa-solid fa-circle-check fa-lg" aria-hidden="true"></i> 
                                         </div>
                                     </div>
                                 </article>
-                            </a>
+                            </div>
                         </div>
                     </section>
                     <div class="btn-align">
@@ -253,4 +259,4 @@
         </div>
     </body>
 
-</html>
+</html>  

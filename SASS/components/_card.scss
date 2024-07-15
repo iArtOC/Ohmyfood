@@ -1,35 +1,49 @@
-/****** menu resto card *******/
-.menu-cards {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+/******* CARD *********/
+.card {
+    background-color: $txt-color-footer;
+    border-radius: 20px;
+    padding: 5px;
+    filter: $btn-filter;
 }
-
-.menu-cards .card {
+  
+.card img {
+    object-fit: cover;
+}
+  
+.card-title {
+    font-size: 16px;
+}
+  
+.card-pin {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 20px;
-    padding: 0;
-    clip: rect(945px 70px);
-}   
-
-.menu-cards .card-content {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 70px;
-    background-clip: content-box;
-    -webkit-background-clip: content-box;
+    justify-content: center;
+}
+
+.card-pin i {
+    position: absolute;
+}
+
+.card-pin .fa-regular {
+    color: $loc-icon-color;
+}
+
+.card-pin .fa-solid {
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.card-pin .fa-solid:hover {
     opacity: 1;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: $prim-color;
 }
-
-.menu-cards .card-txt {
-    margin: 20px;
-}
-
+  
 .card-check {
-    background-color: #99e2d0;
+    background-color: $therd-color;
     width: 59px;
     height: 70px;
     margin: 0;
@@ -41,16 +55,34 @@
     justify-content: center;
     object-fit: cover;
     transform: translateX(59px);
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     opacity: 0;
     transition-delay: opacity 1.5s ease-in-out;
 }
-
-.card:hover .card-check{
+  
+.card:hover .card-check {
     transform: translateX(0px);
     opacity: 1;
 }
+  
+.card-check i {
+    color: $txt-color-footer;
+}
 
-.card-check i{
-    color: #fff;
+.card-check {
+    background-color: $therd-color;
+}
+
+.card-price-check {
+    margin-left: -60px;
+    width: 120px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.card-price p {
+    margin: 5px 0 16px;
+    font-weight: bold;
 }

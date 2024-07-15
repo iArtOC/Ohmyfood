@@ -18,8 +18,15 @@
 }
 .btn-round:hover {
     transition: 1s;
-    opacity: 0.7;
-    filter: drop-shadow(0px 5px 10px rgb(0, 0, 0));
+    opacity: 0.9;
+    filter: drop-shadow(0px 5px 10px rgb(0, 0, 0, 0.9));
+}
+
+@media (min-width: 1025px) {
+    .btn-container {
+      display: flex;
+      flex-direction: row;
+    }
 }
 
 .btn-container .btn-menu {
@@ -51,6 +58,13 @@
 .btn-container .btn-menu i {
     margin: 20px;
 }
+
+@media (min-width: 1025px) {
+    .btn-container .btn-menu i {
+        margin: 10px;
+    }
+}
+
 .btn-container .btn-menu:hover .fa-solid {
     color: $prim-color;
 }
