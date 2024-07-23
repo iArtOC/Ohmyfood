@@ -36,7 +36,7 @@
     height: 70px;
     display: flex;
     align-items: center;
-    margin: 20px;
+    margin: 20px 20px 20px 0;
     padding: 10px 25px;
     border-radius: 20px;
     color: $txt-color;
@@ -44,6 +44,12 @@
     font-size: large;
     box-sizing: border-box;
     filter: $btn-filter;
+}
+
+@media (min-width: 1025px) {
+    .btn-container .btn-menu{
+        margin: 20px;
+    }
 }
 
 .btn-container .btn-menu .number {
