@@ -223,12 +223,13 @@ a {
     width: 100%;
 }
   
-.restaurant a {
+.restaurant article {
     width: 100%;
+    cursor: pointer;
 }
 
 @media (min-width: 1025px) {
-    .restaurant-cards a {
+    .restaurant-cards article {
         width: 45%;
     }
 }
@@ -267,7 +268,7 @@ a {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-  
+
 .restaurant-cards .card-content {
     display: flex;
     justify-content: space-between;
@@ -277,6 +278,7 @@ a {
   
 .restaurant-cards .card-txt {
     margin: 20px;
+    width: max-content;
 }
   
 .restaurant-cards .card-txt h3 {
