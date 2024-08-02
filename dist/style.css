@@ -70,14 +70,6 @@ a {
 
 .img-head {
   width: 100%;
-  /*object-fit: cover;
-  @media (min-width: 1025px) {
-      .img-head {
-          width: 100%;
-          height: 383px;
-          object-fit: cover;
-      }
-  }*/
 }
 
 .img-head img {
@@ -147,12 +139,9 @@ a {
   justify-content: space-between;
   align-items: center;
   height: 70px;
-  /*box-sizing: border-box;
-  text-overflow: ellipsis;*/
 }
 
 .menu-cards .card-txt {
-  /*margin: 20px 0 20px 20px;*/
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -244,13 +233,9 @@ a {
   position: absolute;
   bottom: 30px;
   right: 30px;
-  /* left: 30px; */
-  /* top: 30px; */
   z-index: 5;
   width: 30px;
   height: 25px;
-  /* margin: 1px; */
-  /* display: flex; */
 }
 
 .container-heart .animation-heart {
@@ -397,7 +382,6 @@ a {
   height: 0px;
   background: linear-gradient(to bottom, #9356dc, #ff79da);
   background-clip: text;
-  /*-webkit-background-clip: text;*/
   color: transparent;
 }
 
@@ -748,8 +732,6 @@ footer .foot1, .foot2 {
   justify-content: center;
   align-items: center;
   background-color: #99e2d0;
-  /*border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;*/
   margin-right: -5px;
   width: 65px;
   height: 80px;
